@@ -1,4 +1,4 @@
-# docker compose up   then open http://localhost:8000 (pulls minhal128/androguard)
+# docker compose up   then open http://localhost:8000 (pulls androguard/androguard)
 # docker compose up --build   builds from source instead; CodeBERT only if data/models/codebert-lvdandro is there
 # Superadmin: docker compose exec -e ANDROGUARD_PASSWORD=... web python -m app.manage create-superadmin you@example.com
 # Set POSTGRES_PASSWORD in a .env file for anything beyond a local demo.
@@ -16,7 +16,7 @@ services:
       interval: 3s
       retries: 20
   web:
-    image: minhal128/androguard
+    image: androguard/androguard
     build: .
     environment:
       DATABASE_URL: postgresql+psycopg2://androguard:${POSTGRES_PASSWORD:-change-me}@db/androguard
