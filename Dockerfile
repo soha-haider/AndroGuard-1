@@ -1,7 +1,7 @@
 # AndroGuard on Debian: web app + CLI, apktool + jadx + bundletool + FlowDroid, XGBoost + fine-tuned CodeBERT,
 # PDF reports through WeasyPrint. CodeBERT is optional: without data/models/codebert-lvdandro the image builds and
 # scans without it. To include it, copy it out of the published image first:
-#   docker create --name cb minhal128/androguard && docker cp cb:/srv/data/models/codebert-lvdandro data/models/ && docker rm cb
+#   docker create --name cb androguard/androguard && docker cp cb:/srv/data/models/codebert-lvdandro data/models/ && docker rm cb
 # Alone (SQLite):    docker run -d -p 8000:8000 -v androguard-db:/srv/db --name androguard <image>
 # With PostgreSQL:   docker compose up --build   (see docker-compose.yml)
 FROM python:3.12-slim-bookworm
