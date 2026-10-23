@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+/temp_workspaces/
+/tools/
+hs_err_pid*.log
+*.apk
+*.aab
+.DS_Store
+.vscode/
+.idea/
+/data/
+

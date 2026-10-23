@@ -1,0 +1,6 @@
+# Allowlist: only what the image needs. The CodeBERT model is optional.
+*
+!requirements.txt
+!app
+!data/models/codebert-lvdandro
+**/__pycache__
